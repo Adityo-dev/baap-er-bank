@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-3xl md:text-5xl text-center mt-6">Let's get some<span class="font-semibold text-violet-600">Moooooney</span> !!!</h1>
+    </header>
+
+    <main>
+        
+        <section class="mt-12">
+            <div class="grid md:grid-cols-3 gap-3 w-9/12 mx-auto text-white">
+                <div class="bg-green-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2  class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+
+
+                <div class="bg-orange-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2  class="text-5xl">$<span id="whithdeow-total">00</span></h2>
+                </div>
+
+
+                <div class="bg-violet-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2  class="text-5xl">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and whithdeow -->
+        <section class="mt-12">
+            <div class="grid md:grid-cols-2 gap-4 w-9/12 mx-auto ">
+                <div class="bg-fuchsia-500 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Please Deposit</h4>
+                    <div>
+                        <input class="md:w-9/12 w-full  mb-3 p-2 rounded-md text-sm " type="text" name="" id="deposit-field" placeholder="$ Amount you want to Deposit">
+                        <button id="button-deposit" class="bg-green-600 hover:bg-blue-900 text-white px-4 py-2 mt-2 rounded-lg font-semibold">Deposit</button>
+                    </div>
+                </div>
+
+
+                <div class="bg-teal-500	 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4 text-white">Plesase Withd</h4>
+                    <div>
+                        <input class="md:w-9/12 w-full  mb-3 p-2 rounded-md text-sm " type="text" name="" id="whithdeow-Field" placeholder="$ Amount you want to whithdeow">
+                        <button id="whithdeow-button" class="bg-orange-500 hover:bg-orange-900 text-white px-4 py-2 mt-2 rounded-lg font-semibold">whithdeow</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+            <!-- JAVA SCRIPT LINK  -->
+    <!--  Bank.JS LINK  -->
+    <script src="js/bank.js"></script>
+    </main>
+  </body>
+</html>
